@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irrefreaveis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+    <body>
+
+        <!--
+            
+        Avenida Manoel Goulart, 2881, Presidente Prudente, São Paulo, CEP 19060-000</footer>
+        -->
+
+        <nav style="display: flex; justify-content: space-between; align-items:center; ">
+            <div class="logo">
+                <a href="./turma.html">
+                    IRREFREAVEIS
+                </a>
+            </div>
+            <div class="nav-text">
+            <ul>
+                    <li><a href="./turma.html">Turma</a></li>
+                    <li><a href="./professores.html">Professores</a></li>
+                    <li><a href="./inspiracoes.html">Inspirações</a></li>
+                    <li><a href="./sobremim.html">Sobre mim</a></li>
+            </ul> 
+            </div>
+        </nav>
+
+        <main>
+            <h1>Seja bem-vindo a nossa turma</h1>
+
+            <p>
+                Somos a melhor turma do Senac de Presidente Prudente. Nós do 1º ano do Ensino Médio Técnico de Multimídia gostamos muito dos professores das áreas de Linguagens, Ciências da Natureza, Ciências Humanas e Matemática.
+            </p>
+            
+            <div style="display: flex; align-items: center;gap: 4%;">
+                <img src="./Imagens/Turma1ano.jpeg" alt="Turma do primeiro ano" style="border-radius: 6%; flex-shrink:0; width:40%; height:350px; object-fit: cover;" >
+                <p>
+                    Ao longo do tempo, fomos construindo uma história que vai muito além dos momentos dentro da sala de aula. Cada conversa, risada, aprendizado e experiência contribuiu para formar quem somos como turma. Mesmo sendo diferentes uns dos outros, conseguimos compartilhar momentos especiais, superar desafios e criar amizades que tornam nossa convivência única. Ainda temos muito para viver e aprender juntos, construindo novas lembranças e histórias que levaremos conosco.
+                </p>
+            </div>
+
+            <div class="destaque">
+                <h2>Mais que uma turma, uma história</h2>
+                <p>Desde o início das aulas, nossa turma sempre buscou se conhecer melhor e fortalecer os laços entre todos. Mesmo com diferentes gostos, grupos de amigos e formas de pensar, procuramos sempre manter o respeito, a compreensão e o diálogo. Ao longo dessa caminhada, aprendemos a lidar com as diferenças, resolver conflitos e construir, juntos, um ambiente cada vez mais unido, acolhedor e agradável para todos.</p>
+            </div>
+
+            <h2 style="margin-top: 5%; margin-bottom: 2%;">Momentos da nossa jornada</h2>
+
+            <section class="carrossel">
+
+                <button class="seta" id="anterior">&#10094;</button>
+
+                <div class="carrossel-container" id="carrossel-container"></div>
+
+                <button class="seta" id="proximo">&#10095;</button>
+
+            </section>
+
+            <script src="./carrossel.js" defer></script>
+
+        </main>
+
+        <footer>
+            <div style="display: flex; justify-content:space-between;">
+                <div style="display: flex; flex-direction:column;">
+                    <span class="logo">Irrefreaveis</span> 
+                    <p>Rafael de Souza Gracia - 1º ano A EM</p>
+                </div>
+                <div class="footer-text">
+                    <p style="text-align: center;"><b>Encontre aqui</b></p>
+                    <ul>
+                        <li><a href="./turma.html">Turma</a></li>
+                        <li><a href="./professores.html">Professores</a></li>
+                        <li><a href="./inspiracoes.html">Inspirações</a></li>
+                        <li><a href="./sobremim.html">Sobre mim</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p style="text-align: center;"><b>Senac Presidente Prudente - unidade 57</b></p>
+        </footer>
+
+    </body>
+</html>
