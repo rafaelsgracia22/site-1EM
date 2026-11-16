@@ -1,17 +1,48 @@
-/*TEXTO #000000
-FUNDO #FFDA5C 
+
+/* CORES
+TEXTO: #000000
+FUNDO: #FFDA5C
 */
+
 /*=====================================================
-                INDEX 
-===================================================
-*/
-.apresentacao
-{font-family:'Arial Narrow';
-color:#134C53}
+                    INDEX
+=====================================================*/
+
+.apresentacao {
+    font-family: 'Arial Narrow';
+    color: #000000;
+
+    /* Apresentação pessoal */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3%;
+}
+
+.apresentacao > img {
+    width: 40%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center 30%;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.texto-apresentacao {
+    flex: 1;
+}
+
+.texto-apresentacao h2 {
+    text-align: justify;
+}
+
+.autor {
+    text-align: end;
+}
+
 /*=====================================================
-               SOBREMIM 
-===================================================
-*/
+                    SOBREMIM
+=====================================================*/
 
 body {
     font-family: "Archivo Narrow", sans-serif;
@@ -22,10 +53,7 @@ body {
 }
 
 nav {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 2%;
-    padding-right: 5%;
+    padding: 20px 5% 20px 2%;
     background-color: #FFD02F;
 }
 
@@ -36,7 +64,7 @@ main {
 .logo {
     font-family: "Barrio", cursive;
     color: #710906;
-    font-style: "normal";
+    font-style: normal;
     font-size: 48px;
 }
 
@@ -47,7 +75,7 @@ main {
     gap: 25px;
     flex-shrink: 0;
     font-size: 24px;
-    font-weight: 500;   
+    font-weight: 500;
 }
 
 a {
@@ -62,19 +90,63 @@ h1 {
     font-size: 48px;
 }
 
-p {
-    font-size: 24px;
-    text-align: justify;
-    line-height: 1.5;
-    flex: 1;
-}
-
 h2 {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-size: 32px;
 }
+
+p {
+    font-size: 24px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/*=====================================================
+                    ESPORTES
+=====================================================*/
+
+.titulo-esportes {
+    margin-top: 3%;
+    margin-bottom: 0;
+}
+
+.conteudo-esportes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -4%;
+    gap: 3%;
+}
+
+.lista-esportes {
+    flex: 1;
+}
+
+.imagem-esportes {
+    width: 40%;
+    margin-top: 5%;
+    flex-shrink: 0;
+}
+
+.imagem-esportes img {
+    display: block;
+    width: 100%;
+    object-position: center 34%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.imagem-esportes p {
+    text-align: center;
+    font-size: 16px;
+}
+
+/*=====================================================
+                    DESTAQUE
+=====================================================*/
 
 .destaque {
     margin-top: 6%;
@@ -83,6 +155,10 @@ h2 {
     padding: 30px 6%;
     background-color: #FFD02F;
 }
+
+/*=====================================================
+                    CARROSSEL
+=====================================================*/
 
 .carrossel {
     display: flex;
@@ -114,7 +190,7 @@ h2 {
     z-index: 0;
 }
 
-/* Configuração dos itens */
+/* Itens */
 .item {
     position: relative;
     z-index: 1;
@@ -140,7 +216,7 @@ h2 {
     z-index: 1;
     color: #FFF0BB;
     margin-top: 12px;
-    font-weight: 600
+    font-weight: 600;
 }
 
 /* Item central */
@@ -172,6 +248,7 @@ h2 {
     line-height: 1.4;
 }
 
+/* Setas */
 .seta {
     transform: translateY(-20px);
     position: relative;
@@ -184,10 +261,14 @@ h2 {
     cursor: pointer;
 }
 
+/*=====================================================
+                    RODAPÉ
+=====================================================*/
+
 footer {
     background-color: #FFD02F;
     padding: 56px 5% 20px 5%;
-    color:#710906;
+    color: #710906;
 }
 
 .footer-text ul {
@@ -197,11 +278,270 @@ footer {
     gap: 42px;
     flex-shrink: 0;
     font-size: 24px;
-    font-weight: 500;   
+    font-weight: 500;
+}
+
+.rodape-conteudo {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.rodape-info {
+    display: flex;
+    flex-direction: column;
+}
+
+/*=====================================================
+                ORGANIZAÇÃO DA PÁGINA
+=====================================================*/
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .caixa-lista {
     border-radius: 12px;
     padding: 30px 40px;
-    margin-bottom: 20p;
+    margin-bottom: 20px;
+}
+
+/* Apresentação da turma */
+.intro-turma {
+    display: flex;
+    align-items: center;
+    gap: 4%;
+}
+
+.foto-turma {
+    border-radius: 6%;
+    flex-shrink: 0;
+    width: 40%;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* Listas gerais */
+ul {
+    font-size: 24px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/*=====================================================
+                    TABLETS
+=====================================================*/
+
+@media (max-width: 900px) {
+
+    main {
+        margin: 35px 4% 70px;
+    }
+
+    .logo {
+        font-size: 38px;
+    }
+
+    .nav-text ul {
+        gap: 15px;
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 21px;
+    }
+
+    .intro-turma {
+        gap: 3%;
+    }
+
+    .foto-turma {
+        width: 40%;
+        height: 300px;
+    }
+
+    .central {
+        width: 55%;
+    }
+
+    .central img {
+        height: 300px;
+    }
+
+    .lateral {
+        width: 20%;
+    }
+
+    .footer-text ul {
+        gap: 20px;
+        font-size: 20px;
+    }
+}
+
+/*=====================================================
+                    CELULARES
+=====================================================*/
+
+@media (max-width: 600px) {
+
+    /* Menu */
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 10px;
+    }
+
+    .logo {
+        font-size: 36px;
+    }
+
+    .nav-text {
+        width: 100%;
+    }
+
+    .nav-text ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 20px;
+        padding: 0;
+        margin: 0;
+        font-size: 18px;
+    }
+
+    /* Conteúdo principal */
+    main {
+        margin: 30px 5% 60px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    /* Apresentação pessoal */
+    .apresentacao,
+    .conteudo-esportes {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .apresentacao > img,
+    .imagem-esportes {
+        width: 100%;
+    }
+
+    .texto-apresentacao {
+        width: 100%;
+    }
+
+    /* Apresentação da turma */
+    .intro-turma {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .foto-turma {
+        width: 100%;
+        height: 250px;
+    }
+
+    /* Destaque */
+    .destaque {
+        margin-left: -5.5%;
+        margin-right: -5.5%;
+        padding: 25px 5.5%;
+    }
+
+    /* Carrossel */
+    .carrossel {
+        gap: 5px;
+        margin: 35px auto;
+    }
+
+    .carrossel-container {
+        min-width: 0;
+        gap: 0;
+    }
+
+    /* Esconde os itens laterais */
+    .lateral {
+        display: none;
+    }
+
+    /* Item central */
+    .central {
+        width: 100%;
+        min-width: 0;
+        transform: none;
+    }
+
+    .central img {
+        height: 230px;
+    }
+
+    .descricao {
+        padding: 5px;
+    }
+
+    .descricao h2 {
+        font-size: 24px;
+    }
+
+    .descricao p {
+        font-size: 17px;
+    }
+
+    /* Esconde a faixa do carrossel */
+    .carrossel-container::before {
+        display: none;
+    }
+
+    /* Setas */
+    .seta {
+        color: #710906;
+        font-size: 27px;
+        padding: 3px;
+        transform: none;
+    }
+
+    /* Rodapé */
+    footer {
+        padding: 30px 5% 15px;
+    }
+
+    .rodape-conteudo {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .rodape-info .logo {
+        font-size: 32px;
+    }
+
+    .footer-text ul {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 12px 20px;
+        padding: 0;
+        font-size: 18px;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
 }

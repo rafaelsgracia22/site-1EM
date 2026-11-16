@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Irrefreaveis</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irrefreaveis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
     <body>
-        <nav style="display: flex; justify-content: space-between; align-items:center; ">
+
+        <nav class="menu">
             <div class="logo">
                 <a href="./turma.html">
                     IRREFREAVEIS
@@ -26,11 +27,50 @@
             </ul> 
             </div>
         </nav>
+       
+        <main>
+            <h1>Eu sou o Rafael</h1>
 
-        <main></main>
+            <div class="apresentacao">
+                <img src="./Imagens/minha-foto.jpg" alt="Minha foto">
+
+                <div class="texto-apresentacao">
+                    <p>Tenho 15 anos e estudo no Senac de Presidente Prudente. Minhas matérias favoritas são educação física e matemática. Me considero uma pessoa dedicada, que gosta de aprender coisas novas e conhecer pessoas.</p>
+
+                    <h2>"Se você não acredita em si mesmo, ninguém acreditará por você."</h2>
+                    <p class="autor">- Kobe Bryant</p>
+                </div>
+            </div>
+
+            <h2 class="titulo-esportes">Esportes</h2>
+
+            <div class="conteudo-esportes">
+                <div class="lista-esportes">
+                    <p>Ao longo da minha vida, tive experiências com diferentes esportes, como:</p>
+                    <ul>
+                        <li>Muay Thai;</li>
+                        <li>Futebol;</li>
+                        <li>Tênis de mesa;</li>
+                        <li>Skate;</li>
+                        <li>Basquete.</li>
+                    </ul>
+                    <p>Recentemente tenho praticado bastante o basquete, pois desejo jogar profissionalmente e para isso frequento aulas e me dedico no tempo livre.</p>
+                </div>
+
+                <div class="imagem-esportes">
+                    <img src="./Imagens/muay-thai.jpeg" alt="Foto com Jenny Freitas">
+                    <p>Palestra Jenny Freitas, 2026</p>
+                </div>
+            </div>
+        </main>
+
+
+
+
+        <!-- terminar-->
     <header>
-        <h1>Eu sou o aluno <em>Rafael De Souza Gracia</em></h1>
-        <img src="Imagens/Mídia.jpg" alt="Rafael" width="10%" style="border-radius: 20px;">
+
+        
         <ul class="caixa-lista">
         <h2>Meus filmes e séries preferidos são:</h2>
           <h3>Terror e Drama</h3>
@@ -43,7 +83,7 @@
              <iframe width="560" height="315" src="https://www.youtube.com/embed/_-Nv0JOcGxg?si=GErw8uz9FPxoUZoa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </ul>
         </div>
-            <h2>Minhas musicas favoriata é:</h2>
+            <h2>Minhas musicas favoriata são:</h2>
         <div>
             <h3>BOMBAP</h3>
             <ul>
@@ -58,12 +98,23 @@
         
     </header>
     <footer>
-
-        <nav><a href="index.html"><button>Voltar</button></a></nav>
-            <h2 class="footer">Senac Presidente Prudente<br>
-Avenida Manoel Goulart, 2881, Presidente Prudente, São Paulo, CEP 19060-000</br>
-</h2>
-    </footer>
+            <div style="display: flex; justify-content:space-between;">
+                <div style="display: flex; flex-direction:column;">
+                    <span class="logo">Irrefreaveis</span> 
+                    <p>Rafael de Souza Gracia - 1º ano A EM</p>
+                </div>
+                <div class="footer-text">
+                    <p style="text-align: center;"><b>Encontre aqui</b></p>
+                    <ul>
+                        <li><a href="./turma.html">Turma</a></li>
+                        <li><a href="./professores.html">Professores</a></li>
+                        <li><a href="./inspiracoes.html">Inspirações</a></li>
+                        <li><a href="./sobremim.html">Sobre mim</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p style="text-align: center;"><b>Senac Presidente Prudente - unidade 57</b></p>
+        </footer>
 
 </body>
 </html>
