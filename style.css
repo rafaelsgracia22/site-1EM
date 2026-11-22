@@ -1,16 +1,51 @@
 
-/* CORES
+/* CORES ORIGINAIS DO TEMA CLARO
 TEXTO: #000000
-FUNDO: #FFDA5C
+FUNDO: #FFF0BB
 */
 
+/*=====================================================
+                 TEMAS: CLARO E ESCURO
+=====================================================*/
+
+:root {
+    --cor-fundo: #FFF0BB;
+    --cor-texto: #000000;
+    --cor-superficie: #FFD02F;
+    --cor-acento: #710906;
+    --cor-faixa-carrossel: #710906;
+    --cor-texto-claro: #FFF0BB;
+    --cor-cartao: #FFF0BB;
+}
+
+[data-tema="escuro"] {
+    --cor-fundo: #202020;
+    --cor-texto: #F5F5F5;
+    --cor-superficie: #303030;
+    --cor-acento: #F5C84C;
+    --cor-faixa-carrossel: #49302A;
+    --cor-texto-claro: #FFFFFF;
+    --cor-cartao: #2B2B2B;
+}
+
+#botao-tema {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: var(--cor-acento);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: underline;
+}
 /*=====================================================
                     INDEX
 =====================================================*/
 
 .apresentacao {
     font-family: 'Arial Narrow';
-    color: #000000;
+    color: var(--cor-texto);
 
     /* Apresentação pessoal */
     display: flex;
@@ -46,15 +81,15 @@ FUNDO: #FFDA5C
 
 body {
     font-family: "Archivo Narrow", sans-serif;
-    background-color: #FFF0BB;
-    color: #000000;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
     margin: 0;
     padding: 0;
 }
 
 nav {
     padding: 20px 5% 20px 2%;
-    background-color: #FFD02F;
+    background-color: var(--cor-superficie);
 }
 
 main {
@@ -63,7 +98,7 @@ main {
 
 .logo {
     font-family: "Barrio", cursive;
-    color: #710906;
+    color: var(--cor-acento);
     font-style: normal;
     font-size: 48px;
 }
@@ -80,7 +115,7 @@ main {
 
 a {
     text-decoration: none;
-    color: #710906;
+    color: var(--cor-acento);
 }
 
 h1 {
@@ -145,6 +180,77 @@ p {
 }
 
 /*=====================================================
+                    IGREJA
+=====================================================*/
+
+.titulo-igreja {
+    margin-top: 3%;
+    margin-bottom: 0;
+}
+
+
+/*=====================================================
+                    FILMES
+=====================================================*/
+
+.titulo-filmes {
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+
+.conteudo-filmes-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+}
+
+.conteudo-filmes {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.conteudo-filmes img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.conteudo-filmes p {
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/*=====================================================
+                    MUSICAS
+=====================================================*/
+
+
+.titulo-musicas {
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.conteudo-musicas-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+}
+
+.conteudo-musicas iframe{
+    width: 100%;
+    height: 200px;
+}
+
+.conteudo-musicas a{
+    text-align: center;
+    display: block;
+}
+
+/*=====================================================
                     DESTAQUE
 =====================================================*/
 
@@ -153,7 +259,7 @@ p {
     margin-left: -6%;
     margin-right: -6%;
     padding: 30px 6%;
-    background-color: #FFD02F;
+    background-color: var(--cor-superficie);
 }
 
 /*=====================================================
@@ -186,7 +292,7 @@ p {
     left: -20%;
     width: 140%;
     height: 280px;
-    background-color: #710906;
+    background-color: var(--cor-acento);
     z-index: 0;
 }
 
@@ -214,7 +320,7 @@ p {
 .lateral h3 {
     position: relative;
     z-index: 1;
-    color: #FFF0BB;
+    color: var(--cor-texto-claro);
     margin-top: 12px;
     font-weight: 600;
 }
@@ -224,7 +330,7 @@ p {
     width: 50%;
     transform: translateY(60px);
     z-index: 2;
-    background-color: #FFF0BB;
+    background-color: var(--cor-fundo);
 }
 
 /* Imagem central */
@@ -238,7 +344,7 @@ p {
 }
 
 .descricao h2 {
-    color: #710906;
+    color: var(--cor-acento);
     font-size: 28px;
 }
 
@@ -256,9 +362,56 @@ p {
     flex-shrink: 0;
     border: none;
     background: none;
-    color: #FFF0BB;
+    color: var(--cor-texto-claro);
     font-size: 35px;
     cursor: pointer;
+}
+
+/*=====================================================
+                    INSPIRAÇÕES
+=====================================================*/
+.titulo-inspiracoes {
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+
+.conteudo-inspiracoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -2%;
+    gap: 3%;
+
+}
+.conteudo-inspiracoes p{
+    margin-top: 9%;
+}
+
+.imagem-inspiracoes {
+    width: 40%;
+    flex-shrink: 0;
+}
+
+.imagem-inspiracoes img {
+    display: block;
+    width: 100%;
+    margin-top: 5%;
+    object-position: center 34%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.imagem-inspiracoes-professores {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+.imagem-inspiracoes-professores img {
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
 }
 
 /*=====================================================
@@ -266,9 +419,9 @@ p {
 =====================================================*/
 
 footer {
-    background-color: #FFD02F;
+    background-color: var(--cor-superficie);
     padding: 56px 5% 20px 5%;
-    color: #710906;
+    color: var(--cor-acento);
 }
 
 .footer-text ul {
@@ -300,12 +453,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.caixa-lista {
-    border-radius: 12px;
-    padding: 30px 40px;
-    margin-bottom: 20px;
 }
 
 /* Apresentação da turma */
@@ -382,6 +529,14 @@ ul {
         gap: 20px;
         font-size: 20px;
     }
+
+    .conteudo-filmes-container {
+        gap: 20px;
+    }
+
+    .conteudo-filmes img {
+        height: 350px;
+    }
 }
 
 /*=====================================================
@@ -434,7 +589,8 @@ ul {
 
     /* Apresentação pessoal */
     .apresentacao,
-    .conteudo-esportes {
+    .conteudo-esportes, 
+    .conteudo-inspiracoes {
         flex-direction: column;
         align-items: center;
         gap: 15px;
@@ -513,7 +669,7 @@ ul {
 
     /* Setas */
     .seta {
-        color: #710906;
+        color: var(--cor-acento);
         font-size: 27px;
         padding: 3px;
         transform: none;
@@ -543,5 +699,21 @@ ul {
 
     footer p {
         font-size: 16px;
+    }
+
+    /* Filmes */
+    .conteudo-filmes-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .conteudo-filmes {
+        margin-top: 0;
+    }
+
+    .conteudo-filmes img {
+        width: 100%;
+        height: 350px;
+        object-fit: contain;
     }
 }
